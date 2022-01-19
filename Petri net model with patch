@@ -1,0 +1,67 @@
+digraph tpn {
+"p0" [shape=circle,height=0.556,penwidth=2.0,pos="245.0,109.0",xlabel=<p<SUB>3</SUB>>,xlp="245.0,139.0",label=""];
+"p1" [shape=circle,height=0.556,penwidth=2.0,pos="30.0,209.0",xlabel=<p<SUB>0</SUB>>,xlp="30.0,239.0",label=""];
+"t2" [shape=square,height=0.444,penwidth=2.0,pos="135.0,179.0",label=<t<SUB>0</SUB>>,xlabel="",xlp="135.0,143.0"]
+"p3" [shape=circle,height=0.556,penwidth=2.0,pos="250.0,179.0",xlabel=<p<SUB>2</SUB>>,xlp="250.0,209.0",label=""];
+"p4" [shape=circle,height=0.556,penwidth=2.0,pos="245.0,249.0",xlabel=<p<SUB>1</SUB>>,xlp="245.0,279.0",label=""];
+"t5" [shape=square,height=0.444,penwidth=2.0,pos="335.0,209.0",label=<t<SUB>1</SUB>>,xlabel="",xlp="335.0,173.0"]
+"t6" [shape=square,height=0.444,penwidth=2.0,pos="330.0,124.0",label=<t<SUB>2</SUB>>,xlabel="",xlp="330.0,88.0"]
+"p7" [shape=circle,height=0.556,penwidth=2.0,pos="420.0,159.0",xlabel=<p<SUB>4</SUB>>,xlp="420.0,189.0",label=""];
+"t8" [shape=square,height=0.444,penwidth=2.0,pos="490.0,159.0",label=<t<SUB>3</SUB>>,xlabel="",xlp="490.0,123.0"]
+"t9" [shape=square,height=0.444,penwidth=2.0,pos="975.0,254.0",label=<t<SUB>8</SUB>>,xlabel="",xlp="975.0,218.0"]
+"p10" [shape=circle,height=0.556,penwidth=2.0,pos="560.0,159.0",xlabel=<p<SUB>5</SUB>>,xlp="560.0,189.0",label=""];
+"t11" [shape=square,height=0.444,penwidth=2.0,pos="630.0,154.0",label=<t<SUB>4</SUB>>,xlabel="",xlp="630.0,118.0"]
+"p12" [shape=circle,height=0.556,penwidth=2.0,pos="700.0,209.0",xlabel=<p<SUB>6</SUB>>,xlp="700.0,239.0",label=""];
+"p13" [shape=circle,height=0.556,penwidth=2.0,pos="705.0,94.0",xlabel=<p<SUB>7</SUB>>,xlp="705.0,124.0",label=""];
+"t14" [shape=square,height=0.444,penwidth=2.0,pos="780.0,164.0",label=<t<SUB>5</SUB>>,xlabel="",xlp="780.0,128.0"]
+"p15" [shape=circle,height=0.556,penwidth=2.0,pos="885.0,164.0",xlabel=<p<SUB>8</SUB>>,xlp="885.0,194.0",label=""];
+"t16" [shape=square,height=0.444,penwidth=2.0,pos="975.0,164.0",label=<t<SUB>6</SUB>>,xlabel="",xlp="975.0,128.0"]
+"p17" [shape=circle,height=0.556,penwidth=2.0,pos="885.0,254.0",xlabel=<p<SUB>10</SUB>>,xlp="885.0,284.0",label=""];
+"t18" [shape=square,height=0.444,penwidth=2.0,pos="705.0,29.0",label=<t<SUB>7</SUB>>,xlabel="",xlp="705.0,-7.0"]
+"p19" [shape=circle,height=0.556,penwidth=2.0,pos="1080.0,164.0",xlabel=<p<SUB>9</SUB>>,xlp="1080.0,194.0",label=""];
+"p20" [shape=circle,height=0.556,penwidth=2.0,pos="1070.0,264.0",xlabel=<p<SUB>12</SUB>>,xlp="1070.0,294.0",label=""];
+"t21" [shape=square,height=0.444,penwidth=2.0,pos="1170.0,264.0",label=<t<SUB>10</SUB>>,xlabel="",xlp="1170.0,228.0"]
+"p22" [shape=circle,height=0.556,penwidth=2.0,pos="1270.0,269.0",xlabel=<p<SUB>14</SUB>>,xlp="1270.0,299.0",label=""];
+"t23" [shape=square,height=0.444,penwidth=2.0,pos="525.0,409.0",label=<t<SUB>12</SUB>>,xlabel="",xlp="525.0,373.0"]
+"p24" [shape=circle,height=0.556,penwidth=2.0,pos="900.0,29.0",xlabel=<p<SUB>11</SUB>>,xlp="900.0,59.0",label=""];
+"t25" [shape=square,height=0.444,penwidth=2.0,pos="990.0,29.0",label=<t<SUB>9</SUB>>,xlabel="",xlp="990.0,-7.0"]
+"t26" [shape=square,height=0.444,penwidth=2.0,pos="1180.0,39.0",label=<t<SUB>11</SUB>>,xlabel="",xlp="1180.0,3.0"]
+"p27" [shape=circle,height=0.556,penwidth=2.0,pos="1280.0,39.0",xlabel=<p<SUB>15</SUB>>,xlp="1280.0,69.0",label=""];
+"p28" [shape=circle,height=0.556,penwidth=2.0,pos="1090.0,29.0",xlabel=<p<SUB>13</SUB>>,xlp="1090.0,59.0",label=""];
+"t23" -> "p1" ;
+"p22" -> "t23" ;
+"t21" -> "p22" ;
+"p20" -> "t21" ;
+"t9" -> "p20" ;
+"p19" -> "t25" ;
+"t16" -> "p19" ;
+"p19" -> "t9" ;
+"p17" -> "t9" ;
+"p15" -> "t16" ;
+"t14" -> "p15" ;
+"t14" -> "p17" ;
+"p13" -> "t14" ;
+"p12" -> "t14" ;
+"t18" -> "p19" ;
+"t26" -> "p27" ;
+"p28" -> "t26" ;
+"t25" -> "p28" ;
+"p24" -> "t25" ;
+"t18" -> "p24" ;
+"p10" -> "t18" ;
+"t11" -> "p13" ;
+"p1" -> "t2" ;
+"t2" -> "p4" ;
+"t2" -> "p3" ;
+"t2" -> "p0" ;
+"p4" -> "t5" ;
+"p3" -> "t5" ;
+"p3" -> "t6" ;
+"p0" -> "t6" ;
+"t5" -> "p7" ;
+"t6" -> "p7" ;
+"p7" -> "t8" ;
+"t8" -> "p10" ;
+"p10" -> "t11" ;
+"t11" -> "p12" ;
+}
